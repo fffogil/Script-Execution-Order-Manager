@@ -1,3 +1,7 @@
+# FORK OF https://github.com/vicenterusso/Script-Execution-Order-Manager
+
+I just added a scroll view for the list of scripts, because my screen wasn't big enough to display them all. 
+
 # Unity3D: Script Execution Order Manager
 
 The Builtin Script Execution Order (Edit > Project Settings > Script Execution Order) can be boring and tedious to find and add a script when you have a lot of scripts. This is a small utility to help. It supports:
@@ -6,22 +10,6 @@ The Builtin Script Execution Order (Edit > Project Settings > Script Execution O
  * Default time can be moved;
  * Search/Autocomplete
  * Display Namespaces
- 
-#### INSTALL FROM PACKAGE MANAGER (RECOMMENDED)
-
-Add to your `manifest.json` the following line:
-
-```
-{
-  "dependencies": {
-    "com.vrusso.scriptexecreordermanager": "https://github.com/vicenterusso/Script-Execution-Order-Manager.git",
-  },
-}
-```
-
-#### ASSET STORE LINK
- 
-https://assetstore.unity.com/packages/tools/utilities/script-execution-order-manager-89961
 
 #### USAGE
 
