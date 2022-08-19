@@ -43,6 +43,7 @@ namespace com.vrusso
 
         private const string PHCLASSNAME = "ScriptExecReorderPlaceHolder"; // Placeholder classname
         private Vector2 _scrollPos;
+        private Vector2 _overridedScriptsListScrollPos;
         private string _filter = "";
         private int _oldIndex = 0;
 
@@ -541,7 +542,11 @@ namespace com.vrusso
                     EditorGUILayout.HelpBox("Add scripts to the custom order and drag them to reorder.\n\nScripts in the custom order can execute before or after the default time and are executed from top to bottom. All other scripts execut at the default time in the order they are loaded.\n\n(Changing the order of a scripts may modify the meta data for more than one script.)", MessageType.None);
                     EditorGUILayout.Space();
 
+                    _overridedScriptsListScrollPos = GUILayout.BeginScrollView(_overridedScriptsListScrollPos);
+                    
                     _reordableExecOrderScripts.DoLayoutList();
+
+                    GUILayout.EndScrollView();
 
                     EditorGUILayout.BeginHorizontal();
                     GUILayout.Space(rightSidebarWidth - 120);
