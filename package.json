@@ -1,6 +1,6 @@
 {
-    "name": "com.vrusso.scriptexecreordermanager",
-    "version": "1.1.0",
+    "name": "com.ligofff.scriptexecreordermanager.fork",
+    "version": "1.1.2",
     "displayName": "ScriptExec Reorder Manager",
     "description": "This is a small utility to help reordering scriptexec",
     "unity": "2018.3",
